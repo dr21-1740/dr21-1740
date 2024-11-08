@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Definición del charset o codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Metadatados para mejorar la búsqueda de internet  -->
+    <meta name="author" content="Dalbiery Rodriguez">
+    <meta name="description"
+        content="Guía completa para el cuidado de tu mascota, especialmente perros. Información sobre veterinarios, vacunas, y sitios locales en República Dominicana.">
+    <meta name="keywords"
+        content="Cuidado de mascotas, perros, vacunas, veterinario, aseo de mascotas, Santo Domingo, Santiago, República Dominicana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Cuidar a tu Perro</title>
+    <!-- Icono para la pestaña del navegador -->
+    <link rel="icon" href="/img/logo.avif" type="image/avif">
+    <!-- Bootstrap CSS para el diseño y responsividad de la página web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Google fonts para las letras de la pagina -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootsstrap Icons para los iconos de la pagina -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Hoja de estilos CSS personalizada -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Scripts personalizados -->
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabecera de la página con el logo y la barra de navegación -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo y nombre del sitio -->
+            <a class="navbar-brand" href="#"><img src="/img/logo.avif" alt="Logo" width="40"> Cuidando a tu Perro</a>
+            <!-- Botón para el menú en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú de navegación con enlaces -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces a las secciones de la página -->
+                    <li class="nav-item"><a class="nav-link" href="#informacion">Información</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios Locales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#privacidad">Políticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    <!-- Botón para alternar modo claro/oscuro -->
+                    <li class="nav-item">
+                        <button id="toggle-dark-mode" class="btn btn-outline-secondary ms-2">
+                            <i class="bi bi-moon"></i> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección con la información sobre el cuidado de perros -->
+        <section id="informacion" class="my-5">
+            <h1>Cuidando a tu perro</h1>
+            <p>"Descubre cómo brindarle a tu perro el amor, cuidado y atención que merece, con consejos prácticos para su salud, alimentación y bienestar"</p>
+            <!-- Carrusel de imágenes relacionadas con el cuidado del perro -->
+            <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://veterinariapaloverde.mx/images/especialidades/especialistas_perros_veterinaria_palo_verde.jpg"
+                            class="d-block w-100" alt="Vacunas para perros">
+                        <div class="carousel-caption animated-caption">
+                            <h5>Vacunas Importantes</h5>
+                            <p>Conoce qué vacunas necesita tu perro y cuándo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://veterinariapaloverde.mx/images/especialidades/cardiologia_perros_gatos_veterinaria_palo_verde.jpg"
+                            class="d-block w-100" alt="Visita al veterinario">
+                        <div class="carousel-caption animated-caption">
+                            <h5>Visitas al Veterinario</h5>
+                            <p>Recomendaciones para visitas periódicas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8" class="d-block w-100"
+                            alt="Cuidado y aseo de mascotas">
+                        <div class="carousel-caption animated-caption">
+                            <h5>Cuidado y Aseo</h5>
+                            <p>El aseo de tu mascota también es importante.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles para navegar por el carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Sección de servicios locales en República Dominicana -->
+            <section id="servicios" class="my-5">
+                <h2 class="text-center mb-4">Servicios Locales en República Dominicana</h2>
+
+                <div class="container">
+                    <div class="row">
+                        <!-- Santo Domingo Section -->
+                        <div class="col-md-6 mb-5">
+                            <h3 class="text-primary">Santo Domingo</h3>
+                            <div class="service-item">
+                                <h4>Veterinaria Los Prados</h4>
+                                <p>Dirección: Av. Los Próceres, Santo Domingo, R.D.</p>
+                                <p>Horario: Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15136.934459204418!2d-69.95998829912995!3d18.473074371777987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8a03b4ffe615%3A0x51dfd9dc2e5a537e!2sVetPlaza!5e0!3m2!1ses!2sdo!4v1731084326449!5m2!1ses!2sdo"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <div class="service-item mt-4">
+                                <h4>Aseo de Mascotas Santo Domingo Este</h4>
+                                <p>Dirección: Calle Caracol, Santo Domingo Este, R.D.</p>
+                                <p>Horario: Martes a Domingo, 8:00 AM - 5:00 PM</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242106.39694321237!2d-70.19283554934492!3d18.532857984514763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf863f1a496297%3A0xe6a1694fb883e7d2!2sVeterinaria%20Animal%20Zone!5e0!3m2!1ses!2sdo!4v1731084386210!5m2!1ses!2sdo"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Santiago Section -->
+                        <div class="col-md-6 mb-5">
+                            <h3 class="text-primary">Santiago</h3>
+                            <div class="service-item">
+                                <h4>Centro Veterinario Santiago</h4>
+                                <p>Dirección: Calle Del Sol #45, Santiago, R.D.</p>
+                                <p>Horario: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32475142.93299606!2d-92.58729303829719!3d-6.489887591098059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1c5f6026adc89%3A0xc0007f4aa916cd4e!2sMundo%20Animal%20%22Clinica%20Veterinaria%22!5e0!3m2!1ses!2sdo!4v1731084152987!5m2!1ses!2sdo"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <div class="service-item mt-4">
+                                <h4>Aseo para Perros La Zurza</h4>
+                                <p>Dirección: Calle 16 de Agosto #10, Santiago, R.D.</p>
+                                <p>Horario: Lunes a Sábado, 8:00 AM - 6:00 PM</p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121053.16052283907!2d-70.11042518832276!3d18.53291156374907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89d47d253d45%3A0xa8a398c6411e1349!2sDoggos%20by%20Jessica%20HOTEL%20PARA%20PERROS!5e0!3m2!1ses!2sdo!4v1731084445037!5m2!1ses!2sdo"
+                                    width="100%" height="200" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección de videos educativos sobre cuidado veterinario para perros -->
+                    <h3 class="text-center my-4">Videos de Veterinaria para Perros</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/60T4yU1OoX8?si=CL5zb_YKcI3X-jaF"
+                                title="Video sobre cuidado veterinario para perros" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/iXJHfxtwgPY?si=lYOoKUMTYlrlSPbS"
+                                title="Video sobre medicamentos para perros" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto" class="my-5">
+                <!-- Formulario de contacto -->
+                <div class="contact-section container">
+                    <div class="row">
+                        <!-- Imagen al lado del formulario -->
+                        <div class="col-md-6">
+                            <img src="/img/perro-feliz.jpg" alt="Imagen de contacto" class="img-fluid contact-image">
+                        </div>
+
+                        <!-- Formulario -->
+                        <div class="col-md-6">
+                            <h2>Contáctanos</h2>
+                            <form id="contact-form" class="needs-validation" novalidate>
+                                <div class="form-group mb-3">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="message">Mensaje</label>
+                                    <textarea id="message" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Modal de alerta -->
+                    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="alertModalLabel">Alerta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" id="alertMessage">
+                                    <!-- Mensaje de la alerta -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Sección de políticas de privacidad -->
+            <section id="privacidad" class="my-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Políticas de Privacidad</h2>
+                    <p class="text-center mb-5">Consulta nuestras políticas para proteger tu información y la de tu
+                        mascota.</p>
+
+                    <!-- Sección de políticas de privacidad con efectos interactivos -->
+                    <div class="row">
+                        <!-- Cada bloque de política contiene un icono, título y descripción -->
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="info-personal">
+                                <i class="bi bi-shield-lock privacy-icon"></i>
+                                <h3>Protección de Información Personal</h3>
+                                <p>Nos aseguramos de proteger tu información personal con los estándares de seguridad
+                                    más altos.</p>
+                                <div class="privacy-details">
+                                    <p>Mantenemos tus datos en sistemas protegidos y solo empleados autorizados pueden
+                                        acceder a ellos. Realizamos auditorías regulares para garantizar la seguridad de
+                                        tu información.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="uso-datos">
+                                <i class="bi bi-file-earmark-text privacy-icon"></i>
+                                <h3>Uso de Datos</h3>
+                                <p>Tus datos solo serán utilizados para mejorar nuestros servicios y no se compartirán
+                                    con terceros sin tu consentimiento.</p>
+                                <div class="privacy-details">
+                                    <p>Utilizamos tus datos para personalizar los servicios que ofrecemos, hacer
+                                        recomendaciones y desarrollar nuevas funcionalidades. Puedes solicitar un
+                                        informe completo de cómo usamos tus datos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="derechos">
+                                <i class="bi bi-person-bounding-box privacy-icon"></i>
+                                <h3>Tus Derechos</h3>
+                                <p>Tienes derecho a acceder, corregir o eliminar tu información.</p>
+                                <div class="privacy-details">
+                                    <p>Puedes ejercer tus derechos en cualquier momento. Contáctanos para gestionar tus
+                                        solicitudes o para conocer más sobre nuestras prácticas de privacidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="cookies">
+                                <i class="bi bi-cookie privacy-icon"></i>
+                                <h3>Uso de Cookies</h3>
+                                <p>Utilizamos cookies para mejorar la experiencia en nuestro sitio.</p>
+                                <div class="privacy-details">
+                                    <p>Las cookies nos permiten recordar tus preferencias y mostrar contenido relevante.
+                                        Puedes desactivar las cookies en la configuración de tu navegador.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="transferencia-datos">
+                                <i class="bi bi-box-arrow-in-right privacy-icon"></i>
+                                <h3>Transferencia Internacional de Datos</h3>
+                                <p>Podríamos transferir datos a servidores ubicados en otros países.</p>
+                                <div class="privacy-details">
+                                    <p>En caso de ser necesario transferir tus datos fuera de tu país, aseguramos el
+                                        cumplimiento de todas las regulaciones de protección de datos aplicables.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="retencion-datos">
+                                <i class="bi bi-clock-history privacy-icon"></i>
+                                <h3>Retención de Datos</h3>
+                                <p>Almacenamos tus datos solo durante el tiempo necesario.</p>
+                                <div class="privacy-details">
+                                    <p>Mantenemos tu información mientras sea relevante para los fines del servicio. Una
+                                        vez cumplido el propósito, se eliminan o se anonimizan de forma segura.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="menores">
+                                <i class="bi bi-person-fill-exclamation privacy-icon"></i>
+                                <h3>Privacidad de Menores</h3>
+                                <p>Protegemos especialmente la información de menores de edad.</p>
+                                <div class="privacy-details">
+                                    <p>Si detectamos que hemos recolectado información de menores sin consentimiento
+                                        parental, la eliminamos de nuestros registros. Los padres pueden contactarnos
+                                        para solicitar acciones específicas sobre dicha información.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="privacy-item" id="actualizaciones">
+                                <i class="bi bi-arrow-repeat privacy-icon"></i>
+                                <h3>Actualizaciones de Políticas</h3>
+                                <p>Esta política se actualiza regularmente para reflejar cambios legales.</p>
+                                <div class="privacy-details">
+                                    <p>Notificaremos cualquier cambio significativo en esta política a través de nuestro
+                                        sitio web o por otros medios. Te invitamos a revisar esta sección periódicamente
+                                        para estar al tanto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Sección principal de artículos -->
+            <main>
+                <section id="articulos" class="my-5">
+                    <h2>Artículos y Noticias</h2>
+                    <p class="text-center">Descubre información actualizada sobre el cuidado de perros.</p>
+                    <!-- Lista de artículos -->
+                    <ul class="article-list">
+                        <!-- Cada artículo tiene un título y una descripción que se muestra al hacer clic -->
+                        <li class="article-item" onclick="showArticle(1)">
+                            <h3 class="article-title">Cuidados Básicos para Cachorros</h3>
+                            <p class="article-description" id="description-1">Aprende los cuidados esenciales que
+                                necesita tu cachorro para crecer sano y fuerte. Haz clic para leer más.</p>
+                        </li>
+                        <li class="article-item" onclick="showArticle(2)">
+                            <h3 class="article-title">Cómo Alimentar a tu Perro</h3>
+                            <p class="article-description" id="description-2">Descubre qué alimentos son beneficiosos
+                                para tu perro y cuáles debes evitar. Haz clic para leer más.</p>
+                        </li>
+                        <li class="article-item" onclick="showArticle(3)">
+                            <h3 class="article-title">Ejercicio Adecuado para Perros</h3>
+                            <p class="article-description" id="description-3">Conoce la cantidad de ejercicio que
+                                necesita tu perro según su edad y raza. Haz clic para leer más.</p>
+                        </li>
+                    </ul>
+            <!-- Contenido completo del artículo que se muestra al hacer clic en un artículo -->
+                    <div class="full-article" id="full-article">
+                        <h3 id="full-article-title"></h3>
+                        <img id="full-article-image" src="" alt="Imagen del artículo" style="width: 100%; max-width: 300px; height: auto; margin-top: 15px;">
+                        <p id="full-article-content"></p>
+                        <button class="btn btn-secondary mb-3" onclick="hideArticle()">Cerrar</button>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Botón "Volver arriba" al principio de la página -->
+            <button id="back-to-top" title="Volver arriba">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Síguenos en nuestras redes sociales - Copyright Dalbiery Rodriguez</p>
+        <!-- Íconos de redes sociales -->
+        <a href="https://www.facebook.com" class="bi bi-facebook"></a>
+        <a href="https://www.twitter.com" class="bi bi-twitter"></a>
+        <a href="https://www.instagram.com" class="bi bi-instagram"></a>
+    </footer>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
