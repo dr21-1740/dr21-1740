@@ -1,0 +1,619 @@
+/* Fondo y estilos generales de la pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* Estilo de las imagenes o contenido del carrusel */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Fondo y animación para mejorar la visibilidad en el carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo semitransparente */
+    padding: 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Clase para aplicar animación en cada leyenda */
+.animated-caption {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo del logo en la barra de navegacion */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Estilo de los links en el footer */
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Estilo de hover o de cambio de color en links en el footer */
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para modo oscuro de la pagina */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #bb86fc;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #cc1414;
+    border-color: #bb86fc;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #bb86fc;
+    color: #121212;
+    border-color: #bb86fc;
+}
+
+/* Estilos para la seccion de servicios */
+#servicios {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#servicios h3 {
+    font-size: 1.75rem;
+}
+
+.service-item {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de desvanecimiento para las secciones al hacer scroll */
+.service-item,
+iframe {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Colores en modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+    color: #bb86fc;
+}
+
+/* Estilos específicos en modo oscuro */
+.dark-mode .service-item {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #bb86fc;
+}
+
+/* Estilos del contenedor de servicios */
+#servicios {
+    padding: 3rem 0;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+}
+
+#servicios h3 {
+    font-size: 1.75rem;
+}
+
+/* Estilos de tarjetas de servicio */
+.service-item {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
+/* Modo oscuro para service-item */
+.dark-mode .service-item {
+    background-color: #1f1f1f;
+}
+
+/* Animación de hover */
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
+}
+
+.dark-mode .service-item:hover {
+    background-color: #333333;
+}
+
+/* Estilos para enlaces en hover */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.dark-mode a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el botón de "volver arriba" */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Oculto por defecto */
+    font-size: 24px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#back-to-top.show {
+    display: flex;
+    /* Mostrar el botón cuando sea necesario */
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de la imagen de contacto */
+.contact-image {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.contact-image:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--form-bg-color);
+    transition: background-color 0.3s;
+}
+
+/* Campos del formulario */
+.contact-form .form-control {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    transform: scale(1.02);
+}
+
+/* Botón de envío */
+.contact-form button[type="submit"] {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Compatibilidad con el modo oscuro */
+:root {
+    --form-bg-color: #f8f9fa;
+    --form-text-color: #000;
+}
+
+body.dark-mode {
+    --form-bg-color: #333;
+    --form-text-color: #fff;
+}
+
+.contact-form {
+    color: var(--form-text-color);
+}
+
+.contact-section {
+    padding: 2rem 0;
+}
+
+.contact-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+/* Estilos para el modal de alerta */
+.modal-content {
+    background-color: var(--alert-bg-color);
+    color: var(--alert-text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Variables de colores para los modos claro y oscuro */
+:root {
+    --alert-bg-color: #ffffff; /* Fondo claro para alertas en modo claro */
+    --alert-text-color: #000000; /* Texto oscuro para alertas en modo claro */
+}
+
+body.dark-mode {
+    --alert-bg-color: #333333; /* Fondo oscuro para alertas en modo oscuro */
+    --alert-text-color: #ffffff; /* Texto claro para alertas en modo oscuro */
+}
+
+/* Ajustes en los campos del formulario */
+.contact-form {
+    background-color: var(--form-bg-color);
+    color: var(--form-text-color);
+}
+
+.dark-mode .form-control,
+.dark-mode .form-group label {
+    color: #ffffff; /* Color claro para los textos en modo oscuro */
+}
+
+/* Botón de cierre del modal en modo oscuro */
+.dark-mode .btn-close {
+    filter: invert(1); /* Cambia el color del botón de cierre en modo oscuro */
+}
+
+/* Ajustes para el texto dentro de los campos en modo claro */
+.form-control {
+    color: var(--input-text-color); /* Color del texto en los campos */
+    background-color: var(--input-bg-color); /* Fondo de los campos */
+}
+
+/* Colores en modo claro */
+:root {
+    --input-bg-color: #ffffff; /* Fondo claro para los campos */
+    --input-text-color: #000000; /* Texto oscuro para los campos */
+    --placeholder-color: #666666; /* Color del placeholder en modo claro */
+}
+
+/* Colores en modo oscuro */
+body.dark-mode {
+    --input-bg-color: #333333; /* Fondo oscuro para los campos */
+    --input-text-color: #ffffff; /* Texto claro para los campos */
+    --placeholder-color: #bbbbbb; /* Color del placeholder en modo oscuro */
+}
+
+/* Placeholder styling compatible con ambos modos */
+.form-control::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1; /* Asegura que el color del placeholder sea visible */
+}
+
+/* Ajustes de color para los campos del formulario en ambos modos */
+.form-control {
+    color: var(--input-text-color); /* Color del texto */
+    background-color: var(--input-bg-color); /* Fondo del campo */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo cuando el campo del formulario está enfocado */
+.form-control:focus {
+    background-color: var(--input-focus-bg-color); /* Fondo al enfocar */
+    color: var(--input-focus-text-color); /* Color del texto al enfocar */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra opcional para resaltar */
+}
+
+/* Colores en modo claro */
+:root {
+    --input-bg-color: #ffffff;
+    --input-text-color: #000000;
+    --input-focus-bg-color: #f0f0f0;
+    --input-focus-text-color: #000000;
+    --placeholder-color: #666666;
+}
+
+/* Colores en modo oscuro */
+body.dark-mode {
+    --input-bg-color: #333333;
+    --input-text-color: #ffffff;
+    --input-focus-bg-color: #444444;
+    --input-focus-text-color: #ffffff;
+    --placeholder-color: #bbbbbb;
+}
+
+/* Estilos del placeholder */
+.form-control::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+/* Estilo general de la sección de políticas */
+#privacidad {
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para los elementos de cada política */
+.privacy-item {
+    background-color: var(--privacy-bg-color);
+    color: var(--privacy-text-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.privacy-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--privacy-hover-bg-color);
+    color: var(--privacy-hover-text-color);
+}
+
+.privacy-icon {
+    font-size: 2rem;
+    color: var(--privacy-icon-color);
+    transition: color 0.3s;
+}
+
+.privacy-item:hover .privacy-icon {
+    color: var(--privacy-icon-hover-color);
+}
+
+.privacy-details {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+    transition: max-height 0.3s ease;
+}
+
+.privacy-item.active .privacy-details {
+    display: block;
+}
+
+.privacy-item p {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.privacy-item:hover p {
+    color: var(--privacy-hover-text-color);
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+#articulos {
+    padding: 2rem;
+}
+#articulos h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.article-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.article-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.article-item:hover {
+    background-color: #f9f9f9;
+}
+.dark-mode .article-item {
+    border-color: #444;
+}
+.dark-mode .article-item:hover {
+    background-color: #2e2e2e;
+}
+.article-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.article-description {
+    display: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.full-article {
+    display: none;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-top: 1.5rem;
+}
+.dark-mode .full-article {
+    background-color: #333;
+    border-color: #444;
+}
+.read-more {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dark-mode .read-more {
+    color: #9ec2ff;
+}
+
+/* Colores en modo claro */
+:root {
+    --privacy-bg-color: #f9f9f9;
+    --privacy-text-color: #333;
+    --privacy-hover-bg-color: #e0f7fa;
+    --privacy-hover-text-color: #000;
+    --privacy-icon-color: #007bff;
+    --privacy-icon-hover-color: #0056b3;
+}
+
+/* Colores en modo oscuro */
+body.dark-mode {
+    --privacy-bg-color: #333;
+    --privacy-text-color: #fff;
+    --privacy-hover-bg-color: #444;
+    --privacy-hover-text-color: #ffcc00;
+    --privacy-icon-color: #bb86fc;
+    --privacy-icon-hover-color: #ffcc00;
+}
+
+/* Modo oscuro para la sección de servicios */
+body.dark-mode #servicios {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-mode .service-item {
+    background-color: #1e1e1e; /* Fondo más oscuro para items de servicios */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode #servicios h2 {
+    color: #ffffff; /* Color blanco para el h2 en modo oscuro */
+}
+
+
+
+/* Animación para secciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación al aparecer */
+.service-item,
+iframe {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
