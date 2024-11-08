@@ -138,9 +138,9 @@ function showArticle(id) {
         3: "El ejercicio es vital para el bienestar físico y mental de los perros. La cantidad de ejercicio depende de la raza, la edad y el nivel de energía de cada perro. Perros de raza pequeña pueden requerir menos actividad física, mientras que razas grandes y activas como el pastor alemán o el labrador pueden necesitar al menos una hora de ejercicio diario. Las actividades pueden incluir paseos, juegos de buscar objetos, o incluso ejercicios de entrenamiento en casa. Esto no solo ayuda a mantenerlos en forma, sino que también previene el aburrimiento y problemas de conducta."
     };
     const images = {
-        1: "/img/cuidado.webp",
-        2: "/img/comida.jpg",
-        3: "/img/ejercicio.jpg"
+        1: "img/cuidado.webp",
+        2: "img/comida.jpg",
+        3: "img/ejercicio.jpg"
     };
     // Actualiza el título, contenido e imagen del artículo seleccionado
     document.getElementById('full-article-title').textContent = titles[id];
