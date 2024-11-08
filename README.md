@@ -1,4 +1,4 @@
-## Hi there 👋
+## Portafolio para LP1 de una pagina sobre cuidado de mascotas (perros)👋
 
 <!--
 **dr21-1740/dr21-1740** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
